@@ -1,4 +1,4 @@
-# Craft a Hash Table from scratch
+# OpenAddressHashTable
 
 **Where data finds its bucket.**
 
