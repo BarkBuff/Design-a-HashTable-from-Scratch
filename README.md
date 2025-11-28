@@ -1,19 +1,7 @@
-# OpenAddressHashTable
+OpenAddressHashTable is a compact C library that keeps data exactly where it belongs without making a scene. It’s fast, quiet, and built around open addressing, so every key slides into its slot without leaving a breadcrumb trail of pointers behind it.
 
-**Where data finds its bucket.**
+The whole point is simple: clean structure leads to clean speed. No abstractions hovering overhead, no frameworks whispering in the background. Just raw mechanics doing what they’re supposed to do. C was chosen because it shows the machinery-memory, collisions, probing—all the fun stuff most languages politely hide.
 
-## What is this?
+It’s made for engineers who like understanding the trick without explaining the trick. Everything works the way it looks like it should work, and anything clever stays between the lines, out of sight.
 
-Think of this project as a tiny library where stuff knows exactly where to sit. You toss something in, and it magically lands in the right spot every time. No wandering around, no “have you seen my keys?”, no existential crisis in aisle three. Just tidy, instant organization.
-
-## Why does it exist?
-
-Because order is better than chaos, and curiosity is better than ignorance. This is a small adventure in building something that looks simple on the outside but hides a clever trick behind the curtain. It’s a way to learn how structure gives speed, and how a little brainpower saves a lot of time.
-
-## Why C?
-
-C is the language that lets you see the gears turning. It doesn’t babysit, it doesn’t clean up after you, and it doesn’t apologize. If you want to understand how things really work under the hood—memory, pointers, all the raw machinery—C hands you the wrench.
-
-## Anything else?
-
-This is a project for people who like peeking behind the scenes. It’s about understanding how everyday magic is built. If you’re curious enough to open the black box, welcome in.
+Lightweight to pull in, extremely predictable, and just suspicious enough to feel powerful without revealing exactly why.
