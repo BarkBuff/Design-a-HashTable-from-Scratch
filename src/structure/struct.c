@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
-#include "structure.h"
+#include "struct.h"
 
 static const uint32_t INITIAL_CAPACITY = 53;
 
