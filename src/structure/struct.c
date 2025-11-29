@@ -44,3 +44,27 @@ HashTable *CreateHashTable(void) {
 
     return table;
 }
+
+static void DeleteNode(HashNode *node) {
+    if (node == NULL) {
+        return;
+    }
+    free(node->key);
+    free(node->value);
+    free(node);
+}
+
+void DeleteHashTable(HashTable *table) {
+    if (table == NULL) {
+        return;
+    }
+
+    for (uint32_t i = 0; i < table->capacity; i++) {
+        if (table->buckets[i] != NULL) {
+            DeleteNode(table->buckets[i]);
+        }
+    }
+
+    free(table->buckets);
+    free(table);
+}
